@@ -10,22 +10,33 @@ body {
 
 /* ------------------------- NAVIGATION BAR */
 .social-nav {
+  z-index: 2;
   position: fixed;
   width: 100%;
+  height: 50px;
   top: 0;
+  background-color: #064789;
 }
 
 .main-nav {
+  height: 50px;
   list-style-type: none;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  padding: 0 0;
+  padding: 5px;
+  margin: 0 auto;
 }
 
 .nav-links {
-  text-decoration: none;
+  display: block;
 }
+
+.icon {
+  color: white;
+  width: 40px;
+}
+
 /* ------------------------- END NAVIGATION BAR */
 
 /* ------------------------- CONTENT */
@@ -34,17 +45,36 @@ body {
 .aboutme-page,
 .project-page,
 .contact-page {
+  background: linear-gradient(0deg, #F7FAFD, #FFF);
   height: 460px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 
-.logo {
+.aboutme-page {
+  background: linear-gradient(0deg, #FFF, #F7FAFD);
+}
+
+.contact-page {
+  background: linear-gradient(0deg, #FFF, #F7FAFD);
+}
+
+.logo-container {
+  text-align: center;
+  background-color: #F9F9F9;
+  width: 100%;
   font-family: 'Righteous', cursive;
   font-size: 50px;
-  color: #000;
-  align-self: center;
+  color: #064789;
+  position: fixed;
+  top: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.19);
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  width: 100%;
 }
 
 /* ------------------------- END CONTENT */
@@ -63,10 +93,10 @@ body {
   margin: auto;
   top: 0;
   right: 0;
-  bottom: -310px;
+  bottom: -420px;
   left: 0;
-  border-right: 4px solid #000;
-  border-bottom: 4px solid #000;
+  border-right: 4px solid #fff;
+  border-bottom: 4px solid #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   -webkit-animation: 3s arrow infinite ease;
